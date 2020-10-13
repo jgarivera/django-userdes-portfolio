@@ -1,0 +1,26 @@
+.article-title {
+    margin-bottom: 0.75em;
+    line-height: 32px;
+}
+
+.article-text {
+    line-height: 32px;
+    margin-bottom: 2em;
+}
+
+.references {
+    margin-top: 5em;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.article-image-caption {
+    margin-bottom: 2em;
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}

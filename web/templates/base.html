@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Jose Gabrielle Rivera</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="{% static 'fontawesome/js/all.js' %}"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="{% static 'plugins/github-calendar/dist/github-calendar.css' %}">
+    <!-- github activity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="{% static 'plugins/github-activity/github-activity-0.1.5.min.css' %}">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/articles.css' %}">
+
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle" src="{% static 'images/me.jpg' %}"
+                alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Jose Gabrielle Rivera</h1>
+                <h2 class="desc">Computer Science Student</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/jarivera1210"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/spliteratorrr"><i
+                                class="fab fa-github-alt"></i></a></li>
+                </ul>
+            </div>
+            <!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/" target="_blank"><i
+                    class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+        <!--//container-->
+    </header>
+    <!--//header-->
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                {% block primary %} {% endblock %}
+            </div>
+            <!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                {% block secondary %} {% endblock %}
+            </div>
+            <!--//secondary-->
+        </div>
+        <!--//row-->
+    </div>
+    <!--//masonry-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="{% static 'plugins/jquery-3.4.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/jquery-rss/dist/jquery.rss.min.js' %}"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="{% static 'plugins/github-calendar/dist/github-calendar.min.js' %}"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js">
+    </script>
+    <script type="text/javascript" src="{% static 'plugins/github-activity/github-activity-0.1.5.min.js' %}"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

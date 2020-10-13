@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block secondary %}
+{% include 'output-nav.html' %}
+{% endblock %}
+
+{% block primary %}
+<section class="about section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading">About Me</h2>
+        <div class="content">
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+<!--//section-->
+
+<section class="education section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading">Education</h2>
+        <div class="content">
+            <div class="item">
+                <h3 class="title"><i class="fas fa-graduation-cap"></i> BS Computer Science with
+                    specialization in Systems Software</h3>
+                <h4 class="university">Asia Pacific College <span class="year">(2019 - Present)</span>
+                </h4>
+            </div>
+            <!--//item-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+<!--//section-->
+
+<section class="projects section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading">Projects</h2>
+        <div class="content">
+            <div class="item">
+                <h3 class="title">PrepMatch <span class="place">(2020)</span>
+                </h3>
+                <p class="summary">A free CASPer test reviewing platform. It utilizes the MongoDB,
+                    Express, Angular, Node.js (MEAN) stack for its entire architecture.
+                </p>
+            </div>
+            <!--//item-->
+            <div class="item">
+                <h3 class="title">Project Vitre <span class="place">(2018)</span>
+                </h3>
+                <p class="summary">A thesis project in my senior high school years. We developed a
+                    school management system that uses a local Raspberry Pi 3 web server. It uses a
+                    Linux, Apache, MySQL and PHP (LAMP) tech stack for its web server systems. It also
+                    uses Java and JavaFX for its complementary desktop application.</p>
+                <p><a class="more-link"
+                        href="https://docs.google.com/document/d/1IYCSIvrhijDSqprKlGFX_CWAHWQtrMsQza1abdPjjKA/edit?usp=sharing"
+                        target="_blank"><i class="fas fa-external-link-alt"></i>Paper</a></p>
+            </div>
+            <!--//item-->
+            <div class="item">
+                <h3 class="title">Project I.R.I.S. <span class="place">(2016)</span>
+                </h3>
+                <p class="summary">A project that is a winning entry under the 'imake.wemake: create
+                    innovate collaborate' nationwide competition held by DOST-SEI in October 2016 to
+                    March 2017. It focused primarily on embedded software development using C++ in the
+                    Intel® Galileo platform. The project relies on the integration of computer vision
+                    technology to monitor crossroad traffic violations using OpenCV. Furthermore, it is
+                    coupled with a web dashboard using XAMPP.</p>
+                <p><a class="more-link"
+                        href="https://docs.google.com/document/d/1V2Fb-wgFV05Fnm2vD8dEKagTqW3RWl69NdLo1ES-OCE/edit?usp=sharing"
+                        target="_blank"><i class="fas fa-external-link-alt"></i>Paper</a></p>
+            </div>
+            <!--//item-->
+
+            <a class="btn btn-cta-secondary" href="https://github.com/spliteratorrr">More on GitHub <i
+                    class="fas fa-chevron-right pt-1"></i></a>
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+<!--//section-->
+
+<section class="experience section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading">Work Experience</h2>
+        <div class="content">
+            <div class="item">
+                <h3 class="title">Software Engineer - <span class="place">PrepMatch
+                    </span> <span class="year">(2020 - Present)</span></h3>
+                <p>Designed a peer-to-peer reviewing platform using MongoDB, Express, Angular and
+                    Node.js (MEAN) stack.</p>
+            </div>
+            <!--//item-->
+            <div class="item">
+                <h3 class="title">Fullstack Developer - <span class="place">Accuratek
+                        Solutions</span>
+                    <span class="year">(2019 - 2020)</span></h3>
+                <p>I manage and maintain the company website using
+                    Laravel and PHP. I occasionally deploy patches for new website features. I apply
+                    different principles of responsive design and SEO to engage its customers.</p>
+            </div>
+            <!--//item-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+<!--//section-->
+<section class="github section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading">My GitHub</h2>
+
+        <div id="github-graph" class="github-graph">
+
+        </div>
+        <!--//github-graph-->
+
+        <div id="ghfeed" class="ghfeed">
+        </div>
+        <!--//ghfeed-->
+
+    </div>
+    <!--//secton-inner-->
+</section>
+<!--//section-->
+
+{% endblock %}
