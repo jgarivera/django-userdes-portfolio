@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block secondary %}
 {% include 'output-nav.html' %}
@@ -9,45 +10,71 @@
     <div class="section-inner shadow-sm rounded">
         <h2 class="heading"><a href="/"><i class="fas fa-chevron-left"></i></a>&nbsp;&nbsp;G3: What is Prototyping?</h2>
         <div class="content">
-            <h5 class="article-title">What is Design and User Design?</h5>
+            <h5 class="article-title">What is prototyping?</h5>
             <p class="article-text">
-                Design is the process of arranging and structuring elements to form a pattern or
-                composition. User design is the process of designing the structure and elements of a
-                product for the sole user.
+                Prototyping is an experimental process. It is where designers turn their ideas from paper to something
+                more tangible (Interaction Design Foundation, 2020). It is also iterative. One can keep refining,
+                reconceptualizing and validating designs until it is the most appropriate and correct. With this,
+                designers could definitely create and provide the right products to the end-users.
             </p>
 
-            <h5 class="article-title">What is the difference between User Experience Design and User
-                Interface Design? Why does it matter?
+            <h5 class="article-title">
+                What is the difference between low-fidelity and high-fidelity prototypes?
             </h5>
             <p class="article-text">
-                User experience (UX) design is about designing products that are user-friendly.
-                Furthermore, it is all about carefully designing and providing functional interaction
-                and experiences for the users. UX design is attributed to overall feel of the experience
-                (Lamprecht, 2019). On the other hand, user interface (UI) design is the process of
-                designing the look and function of a product’s interface. UI design is all about visuals
-                and graphical elements such as buttons, icons, colors schemes, spacing, fonts,
-                responsiveness and much more. UX and UI design goes hand-in-hand and closely integrates
-                with one another. They both matter hence both UX and UI design are integral in
-                developing and producing a successful product (Lamprecht, 2019). If the users find the
-                product’s UX and UI intuitive and functional, they are guaranteed to like and keep using
-                the product thus lead to the product’s success.
+                Fidelity refers to the level of detail and functionality that a prototype manifest (Interaction Design
+                Foundation, 2020). Low-fidelity prototypes, such as paper prototypes, merely provide a quick overall
+                look of the intended design. It is fast and cheap to produce. It is also disposable, easy to iterate
+                from and make changes with. Although fast and cheap, the lack of specific details makes it difficult for
+                the users to provide feedback with it (Interaction Design Foundation, 2020). Since low-fidelity often
+                suggest ambiguous design, it is far off from realism and requires a lot of imagination for the user to
+                attain a concrete perspective.
             </p>
-            <h5 class="article-title">Who are the users? Why are they important?</h5>
+
             <p class="article-text">
-                The users are the ones that actually use and interact with a particular product. They
-                are important because they are the sole reason why a product exists. Great UI and UX
-                leads to user loyalty and satisfaction for the product which leads to its success
-                (Lamprecht, 2019). Moreover, a product exists for the users themselves and that is why
-                it is important to create a user-centered product.
+                On the other hand, high-fidelity prototypes, such as digital prototypes created with image editing
+                software, are grander and engaging (Interaction Design Foundation, 2020). The vision of the final
+                product is more clear-cut and apparent in this kind of prototype. Users could judge and understand more
+                what the planned design is. With this, they could provide more critical and accurate feedback. Although
+                grander and engaging, it is costlier, and more time is needed to craft a prototype with high-fidelity
+                (Interaction Design Foundation, 2020).
             </p>
+
+            <h5 class="article-title">Give examples of low-fidelity and high-fidelity prototypes</h5>
+            <p class="article-text">
+                An example of a low-fidelity and high-fidelity prototype is my A3 activity featuring my personal
+                portfolio.
+            </p>
+
+            <div class="article-tuple-container">
+                <div class="article-tuple-box">
+                    <img class="article-image" src="{% static 'images/prototype/p1.jpg' %}" alt="Low fidelity">
+                    <p class="article-image-caption">Low-fidelity prototype</p>
+                </div>
+
+                <div class="article-tuple-box">
+                    <img class="article-image" src="{% static 'images/prototype/hf.png' %}" alt="High fidelity">
+                    <p class="article-image-caption">High-fidelity prototype</p>
+                </div>
+            </div>
+
+            <h5 class="article-title">Why is prototyping important?</h5>
+            <p class="article-text">
+                Prototyping is important because it allows designers to experiment and communicate intended features. In
+                this stage, they could come up with something tangible and also something that is critically measurable.
+                They could hand out these prototypes to early users so that they could garner immediate feedback about
+                their early designs before it gets too costly or too complicated to revert back. Prototyping is
+                seemingly analogous to the quote: “prevention is better than the cure.” Prototyping allows us to see and
+                evaluate designs that would not work; based on the feedback from the users. We prevent unwanted costs in
+                the long run.
+            </p>
+
             <div class="references">
                 <hr>
                 <h5 class="article-title">References</h5>
                 <ul>
-                    <li>Lamprecht, E. (2019, December 19). The Difference Between UX And UI Design - A
-                        Layman’s Guide. Retrieved from Career Foundry:
-                        https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide
-
+                    <li>Interaction Design Foundation. (2020). What is Prototyping? Retrieved from
+                        https://www.interaction-design.org/literature/topics/prototyping
                     </li>
                 </ul>
             </div>

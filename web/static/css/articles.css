@@ -28,6 +28,20 @@
     max-width: 200px;
 }
 
+.article-tuple-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.article-tuple-box {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    flex: 1 50%;
+    min-width: 200px;
+}
+
 .references {
     margin-top: 5em;
 }
