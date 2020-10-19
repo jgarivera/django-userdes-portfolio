@@ -4,13 +4,20 @@
 {% endblock %}
 
 {% block primary %}
-<section class="about section">
+<section class="projects section">
     <div class="section-inner shadow-sm rounded">
         <h2 class="heading">About Me</h2>
         <div class="content">
-            Hi, I am Jose! I am a computer science student. Welcome to my personal portfolio! This portfolio showcases
-            my journey in our User Design class.
+            <div class="item">
+                Hi, I am Jose! I am a computer science student. Welcome to my personal portfolio! This portfolio
+                showcases
+                my journey in our User Design class.
+            </div>
+            <a class="btn btn-cta-secondary" href="{% url 'web:a0' %}">Know more <i
+                    class="fas fa-chevron-right pt-1"></i></a>
         </div>
+
+
         <!--//content-->
     </div>
     <!--//section-inner-->
