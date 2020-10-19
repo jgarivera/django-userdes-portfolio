@@ -9,6 +9,8 @@ def index(request):
     """
     return render(request, 'index.html', {})
 
+# ACTIVITIES
+
 
 def a0(request):
     """
@@ -33,9 +35,18 @@ def a2(request):
 
 def a3(request):
     """
-        Render the A1 page
+        Render the A3 page
     """
-    return render(request, 'outputs/a/a1.html', {})
+    return render(request, 'outputs/a/a3.html', {})
+
+
+def a4(request):
+    """
+        Render the A4 page
+    """
+    return render(request, 'outputs/a/a4.html', {})
+
+# GUIDE QUESTIONS
 
 
 def g1(request):
@@ -45,22 +56,45 @@ def g1(request):
     return render(request, 'outputs/g/g1.html', {})
 
 
+def g2(request):
+    """
+        Render the G2 page
+    """
+    return render(request, 'outputs/g/g2.html', {})
+
+
+def g3(request):
+    """
+        Render the G3 page
+    """
+    return render(request, 'outputs/g/g3.html', {})
+
+# REFLECTIONS
+
+
 def r1(request):
     """
-        Render the G1 page
+        Render the R1 page
     """
     return render(request, 'outputs/r/r1.html', {})
 
 
 def r2(request):
     """
-        Render the G1 page
+        Render the R2 page
     """
     return render(request, 'outputs/r/r2.html', {})
 
 
 def r3(request):
     """
-        Render the G1 page
+        Render the R3 page
     """
     return render(request, 'outputs/r/r3.html', {})
+
+
+def r4(request):
+    """
+        Render the R4 page
+    """
+    return render(request, 'outputs/r/r4.html', {})
