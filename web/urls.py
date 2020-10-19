@@ -12,8 +12,9 @@ urlpatterns = [
     # Activities
     path('outputs/a0', views.a0, name='a0'),
     path('outputs/a1', views.a1, name='a1'),
-    path('outputs/a2', views.a1, name='a2'),
-    path('outputs/a3', views.a1, name='a3'),
+    path('outputs/a2', views.a2, name='a2'),
+    path('outputs/a3', views.a3, name='a3'),
+    path('outputs/a4', views.a3, name='a4'),
 
     # Guide Questions
     path('outputs/g1', views.g1, name='g1'),

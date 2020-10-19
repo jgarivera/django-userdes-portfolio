@@ -12,12 +12,26 @@ def index(request):
 
 def a0(request):
     """
-        Render the A1 page
+        Render the A0 page
     """
     return render(request, 'outputs/a/a0.html', {})
 
 
 def a1(request):
+    """
+        Render the A1 page
+    """
+    return render(request, 'outputs/a/a1.html', {})
+
+
+def a2(request):
+    """
+        Render the A2 page
+    """
+    return render(request, 'outputs/a/a2.html', {})
+
+
+def a3(request):
     """
         Render the A1 page
     """
