@@ -26,4 +26,5 @@ urlpatterns = [
     path('outputs/r2', views.r2, name='r2'),
     path('outputs/r3', views.r3, name='r3'),
     path('outputs/r4', views.r4, name='r4'),
+    path('outputs/r5', views.r5, name='r5'),
 ]

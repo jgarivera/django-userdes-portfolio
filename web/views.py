@@ -98,3 +98,9 @@ def r4(request):
         Render the R4 page
     """
     return render(request, 'outputs/r/r4.html', {})
+
+def r5(request):
+    """
+        Render the R4 page
+    """
+    return render(request, 'outputs/r/r5.html', {})
