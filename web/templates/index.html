@@ -3,6 +3,18 @@
 {% include 'output-nav.html' %}
 {% endblock %}
 
+{% block head %}
+<style>
+    .flex-grid {
+        display: flex;
+    }
+
+    .col {
+        flex: 1;
+    }
+</style>
+{% endblock %}
+
 {% block primary %}
 <section class="projects section">
     <div class="section-inner shadow-sm rounded">
@@ -35,6 +47,23 @@
                 </h4>
             </div>
             <!--//item-->
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+<!--//section-->
+
+<section class="education section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading">Learnings</h2>
+        <div class="content">
+            <div class="flex-grid">
+                {% for l in learnings %}
+                <div class="col">{{ l.img }}</div>
+                {% endfor %}
+            </div>
+
         </div>
         <!--//content-->
     </div>

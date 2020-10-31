@@ -7,7 +7,16 @@ def index(request):
     """
         Render the index page
     """
-    return render(request, 'index.html', {})
+    learnings = [
+        {
+            'img': 'l1.png'
+        },
+        {
+            'img': 'l2.png'
+        }
+    ]
+    context = {'learnings': learnings}
+    return render(request, 'index.html', context)
 
 # ACTIVITIES
 
