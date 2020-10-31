@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block secondary %}
 {% include 'output-nav.html' %}
 {% endblock %}
@@ -7,10 +9,24 @@
 <style>
     .flex-grid {
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .flex-grid::after {
+        content: "";
+        width: calc(50%);
     }
 
     .col {
-        flex: 1;
+        flex: 1 1 calc(50% - 16px);
+        min-width: 0;
+        margin-right: 0px !important;
+        margin-bottom: 1em;
+    }
+
+    .learning-img {
+        max-width: 100%;
     }
 </style>
 {% endblock %}
@@ -60,7 +76,7 @@
         <div class="content">
             <div class="flex-grid">
                 {% for l in learnings %}
-                <div class="col">{{ l.img }}</div>
+                <div class="col"><img class="learning-img" src="{% static 'images/learnings/'|add:l.img %}"></div>
                 {% endfor %}
             </div>
 

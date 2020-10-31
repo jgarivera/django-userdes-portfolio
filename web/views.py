@@ -13,6 +13,27 @@ def index(request):
         },
         {
             'img': 'l2.png'
+        },
+        {
+            'img': 'l3.png'
+        },
+        {
+            'img': 'l4.png'
+        },
+        {
+            'img': 'l5.png'
+        },
+        {
+            'img': 'l6.png'
+        },
+        {
+            'img': 'l7.png'
+        },
+        {
+            'img': 'l8.png'
+        },
+        {
+            'img': 'l9.png'
         }
     ]
     context = {'learnings': learnings}
