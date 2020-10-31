@@ -46,6 +46,13 @@ def a4(request):
     """
     return render(request, 'outputs/a/a4.html', {})
 
+
+def a5(request):
+    """
+        Render the A5 page
+    """
+    return render(request, 'outputs/a/a5.html', {})
+
 # GUIDE QUESTIONS
 
 
@@ -98,6 +105,7 @@ def r4(request):
         Render the R4 page
     """
     return render(request, 'outputs/r/r4.html', {})
+
 
 def r5(request):
     """

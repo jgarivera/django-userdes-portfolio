@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block secondary %}
+{% include 'output-nav.html' %}
+{% endblock %}
+
+{% block primary %}
+<section class="about section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading"><a href="/"><i class="fas fa-chevron-left"></i></a>&nbsp;&nbsp;A5: Grid Design</h2>
+        <div class="content">
+            <p class="article-text">
+                The darker squares represent images while the lighter squares represent text.
+            </p>
+
+            <h5 class="article-title">3x3 Grid Design</h5>
+            <img class="article-image" src="{% static 'images/grid/3x3.jpg' %}" alt="Prior image">
+            <p class="article-image-caption">3x3 Grid</p>
+
+            <img class="article-image" src="{% static 'images/grid/3x3f.jpg' %}" alt="Prior image">
+            <p class="article-image-caption">3x3 Grid Filled</p>
+
+            <h5 class="article-title">4x4 Grid Design</h5>
+            <img class="article-image" src="{% static 'images/grid/4x4.jpg' %}" alt="Prior image">
+            <p class="article-image-caption">4x4 Grid</p>
+
+            <img class="article-image" src="{% static 'images/grid/4x4f.jpg' %}" alt="Prior image">
+            <p class="article-image-caption">4x4 Grid Filled</p>
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+{% endblock %}
