@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'plugins/flickity/flickity.min.css' %}" media="screen">
+
+<style>
+    .game {
+        padding: 2em;
+        margin-bottom: 3em;
+    }
+</style>
+{% endblock %}
+
+{% block secondary %}
+{% include 'output-nav.html' %}
+{% endblock %}
+
+{% block primary %}
+<section class="about section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading"><a href="/"><i class="fas fa-chevron-left"></i></a>&nbsp;&nbsp;A6: Game Day</h2>
+        <div class="content">
+            <p class="article-text">
+                We played various design-related games. They were really fun!
+            </p>
+            <div class="game">
+                <h5 class="article-title">Game 1: Kern Type, the kerning game</h5>
+                <img class="article-image" src="{% static 'images/game/image--000.png' %}" alt="Prior image">
+                <p class="article-image-caption">My kerntype results</p>
+            </div>
+
+            <div class="game">
+                <h5 class="article-title">Game 2: Brandseen – How well do you recognize these brands?</h5>
+                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    {% for i in brandseen_imgs %}
+                    <div class="carousel-cell"><img src="{% static 'images/game/'|add:i %}"></div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="game">
+                <h5 class="article-title">Game 3: Better Web Type</h5>
+                <div class="carousel2" data-flickity='{ "wrapAround": true }'>
+                    {% for i in bwt_imgs %}
+                    <div class="carousel2-cell"><img src="{% static 'images/game/'|add:i %}"></div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="game">
+                <h5 class="article-title">Game 4: Type War</h5>
+                <img class="article-image" src="{% static 'images/game/image--022.jpg' %}" alt="Prior image">
+                <p class="article-image-caption">My Type War results</p>
+            </div>
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'plugins/flickity/flickity.pkgd.min.js' %}"></script>
+
+<script>
+
+</script>
+{% endblock %}

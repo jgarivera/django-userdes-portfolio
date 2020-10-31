@@ -30,6 +30,7 @@
     <link id="theme-style" rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link id="theme-style" rel="stylesheet" href="{% static 'css/articles.css' %}">
 
+    {% block head %} {% endblock %}
 </head>
 
 <body>
@@ -50,8 +51,8 @@
                 </ul>
             </div>
             <!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="https://www.linkedin.com/in/jarivera1210" target="_blank"><i
-                    class="fas fa-paper-plane"></i> Contact Me</a>
+            <a class="btn btn-cta-primary float-right" href="https://www.linkedin.com/in/jarivera1210"
+                target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
         </div>
         <!--//container-->
     </header>
@@ -85,6 +86,8 @@
     <script type="text/javascript" src="{% static 'plugins/github-activity/github-activity-0.1.5.min.js' %}"></script>
     <!-- custom js -->
     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+    {% block scripts %} {% endblock %}
 </body>
 
 </html>

@@ -53,6 +53,22 @@ def a5(request):
     """
     return render(request, 'outputs/a/a5.html', {})
 
+
+def a6(request):
+    """
+        Render the A6 page
+    """
+    brandseen_imgs = ['image--001.jpg', 'image--002.jpg', 'image--003.jpg', 'image--004.jpg', 'image--005.jpg',
+                      'image--006.jpg', 'image--007.jpg', 'image--008.jpg', 'image--009.jpg', 'image--010.jpg']
+
+    bwt_imgs = ['image--011.jpg', 'image--012.jpg', 'image--013.jpg', 'image--014.jpg',
+                'image--015.jpg', 'image--016.jpg', 'image--017.jpg', 'image--018.jpg', 'image--019.jpg', 'image--020.png', 'image--021.jpg']
+
+    context = {'brandseen_imgs': brandseen_imgs, 'bwt_imgs': bwt_imgs}
+
+    return render(request, 'outputs/a/a6.html', context)
+
+
 # GUIDE QUESTIONS
 
 

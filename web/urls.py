@@ -16,6 +16,7 @@ urlpatterns = [
     path('outputs/a3', views.a3, name='a3'),
     path('outputs/a4', views.a4, name='a4'),
     path('outputs/a5', views.a5, name='a5'),
+    path('outputs/a6', views.a6, name='a6'),
 
     # Guide Questions
     path('outputs/g1', views.g1, name='g1'),
