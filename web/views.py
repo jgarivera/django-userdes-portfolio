@@ -98,6 +98,11 @@ def a6(request):
 
     return render(request, 'outputs/a/a6.html', context)
 
+def a7(request):
+    """
+        Render the A7 page
+    """
+    return render(request, 'outputs/a/a7.html', {})
 
 # GUIDE QUESTIONS
 
@@ -155,6 +160,12 @@ def r4(request):
 
 def r5(request):
     """
-        Render the R4 page
+        Render the R5 page
     """
     return render(request, 'outputs/r/r5.html', {})
+
+def r6(request):
+    """
+        Render the R6 page
+    """
+    return render(request, 'outputs/r/r6.html', {})

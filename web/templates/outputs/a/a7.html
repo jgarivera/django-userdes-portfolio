@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block secondary %}
+{% include 'output-nav.html' %}
+{% endblock %}
+
+{% block head %}
+<style>
+    .box {
+        stroke: black;
+        display: block;
+        margin: 0;
+    }
+
+    .colors li {
+        align-items: center;
+    }
+
+    .color-text {
+        margin-left: 0.5em;
+    }
+
+    .colors li svg {
+        width: 16px;
+        height: 16px;
+    }
+</style>
+{% endblock %}
+{% block primary %}
+<section class="about section">
+    <div class="section-inner shadow-sm rounded">
+        <h2 class="heading"><a href="/"><i class="fas fa-chevron-left"></i></a>&nbsp;&nbsp;A7: Personal Website Progress
+            Report</h2>
+        <div class="content">
+            <h5 class="article-title">Typography</h5>
+            <p class="article-text">
+                Lato
+            </p>
+
+            <h5 class="article-title">Color Scheme</h5>
+            <ul class="colors">
+                <li>
+                    <svg>
+                        <rect class="box" style="fill:#FFFFFF;" width="16" height="16" />
+                    </svg>
+                    <span class="color-text">#FFFFFF – White (foreground)</span>
+                </li>
+
+                <li>
+                    <svg>
+                        <rect class="box" style="fill:#DAE3E7;" width="16" height="16" />
+                    </svg>
+                    <span class="color-text">#DAE3E7 – Bluish gray (background)</span>
+                </li>
+
+                <li>
+                    <svg>
+                        <rect class="box" style="fill:#F5F5F5;" width="16" height="16" />
+                    </svg>
+                    <span class="color-text">#F5F5F5 – Light gray</span>
+                </li>
+
+                <li>
+                    <svg>
+                        <rect class="box" style="fill:#54BA4E;" width="16" height="16" />
+                    </svg>
+                    <span class="color-text">#54BA4E – Green (accent)</span>
+                </li>
+
+                <li>
+                    <svg>
+                        <rect class="box" style="fill:#479FC8;" width="16" height="16" />
+                    </svg>
+                    <span class="color-text">#479FC8 – Blue (accent)</span>
+                </li>
+            </ul>
+
+            <h5 class="article-title">Screenshots</h5>
+
+            <h6 class="article-title">Home Section</h6>
+            <img class="article-image" src="{% static 'images/progress/image--000.jpg' %}">
+            <p class="article-image-caption">Home Page</p>
+
+            <img class="article-image" src="{% static 'images/progress/image--001.png' %}" style="max-width: 300px;">
+            <p class="article-image-caption">Global Navigation - Side Navigation</p>
+
+            <img class="article-image" src="{% static 'images/progress/image--002.jpg' %}">
+            <p class="article-image-caption">Learnings Section</p>
+
+            <img class="article-image" src="{% static 'images/progress/image--003.png' %}">
+            <p class="article-image-caption">Miscellaneous sections - projects and work experience</p>
+
+            <img class="article-image" src="{% static 'images/progress/image--004.jpg' %}">
+            <p class="article-image-caption">Miscellaneous sections - GitHub</p>
+
+            <h6 class="article-title">Activities Section</h6>
+            <img class="article-image" src="{% static 'images/progress/image--005.jpg' %}">
+            <p class="article-image-caption">Activity page structure</p>
+
+            <img class="article-image" src="{% static 'images/progress/image--006.jpg' %}">
+            <p class="article-image-caption">Guide question page structure</p>
+
+            <img class="article-image" src="{% static 'images/progress/image--007.jpg' %}">
+            <p class="article-image-caption">Reflection page structure</p>
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+{% endblock %}
